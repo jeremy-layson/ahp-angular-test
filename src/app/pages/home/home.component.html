@@ -1,0 +1,32 @@
+<div class="p-5">
+  <h1>This is the homepage</h1>
+  <h3>This project aims to showcase my understanding of Angular JS for a particular project</h3>
+  <p>This project should demonstrate the following</p>
+
+  <ul>
+    <li>Setting up of AngularJS</li>
+    <li>Adding BootstrapCSS to AngularJS</li>
+    <li>Setting up routing with AngularJS</li>
+    <li>Basic understanding of folder structure</li>
+    <li>Understanding of setting up pages in Angular</li>
+    <li>Basic componentization</li>
+    <li>Back-end Connection as demonstrated below</li>
+    <li>Services</li>
+  </ul>
+
+  <h1>Sample API Request</h1>
+
+  <button class="btn btn-primary" (click)="fetchNewBeer()">Click me!</button>
+  <p>This button will perform a GET to a free API and shows a random beer from the list</p>
+  <p><b>Note: </b> this free API might return a result with broken image</p>
+
+  <span ng-if="beer">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{beer.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{beer.name}}</h5>
+        <p class="card-text">{{beer.price}}</p>
+      </div>
+    </div>
+  </span>
+</div>
